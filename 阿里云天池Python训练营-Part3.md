@@ -235,7 +235,7 @@ nwb.save('./30-functions-2.xls') #保存副本工作簿。
 def counter1(iterable,min,max):#普通关键字参数。
     lst=[v for v in iterable if v>=min and v<=max]
     return len(lst)
-def counter2(iterable,*,min,max):#命名关键字参数。
+def counter2(iterable,*,min,max):#命名关键字参数。*前给值是不用给名字，后面反之
     lst=[v for v in iterable if v>=min and v<=max]
     return len(lst)
 # 调用自定义函数
